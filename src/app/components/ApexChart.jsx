@@ -7,7 +7,7 @@ class ApexChart extends React.Component {
 
     const options = {
       chart: {
-        height: 350,
+        // height: '10%',
         type: 'radialBar',
         toolbar: {
           show: false
@@ -85,15 +85,14 @@ class ApexChart extends React.Component {
     };
 
     return (
-      <div className='flex flex-col' id="chart">
-          <ReactApexChart
+      <div >
+          <ReactApexChart 
             options={options}
             series={seriesData}
             type="radialBar"
-            height={350} 
-            className="flex block"
+            className=" respo flex block w-[13rem] sm:w-[20rem] "
           />
-      </div>
+</div>
     );
   }
 }

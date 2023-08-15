@@ -20,6 +20,54 @@ body {
     background-color: #f1f1f1; /* Çubuk arka plan rengi */
     border-radius: 5px; /* Köşe yuvarlatma */
   }
+
+
+
+
+
+
+  
+  .gradient-div:hover {
+    background: linear-gradient(45deg, #f06, #00f, #0c6);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+
+  @media (max-width: 1000px) {
+    .respo{
+      flex-wrap: wrap;
+    }
+
+
+  }
+
+  @media (max-width: 500px) {
+    .respo-header{
+      flex-wrap: wrap;
+      box-sizing: border-box;
+    }
+  
+  
+
+
+  }
+  
+
+
   
 
   
