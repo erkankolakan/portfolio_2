@@ -1,0 +1,34 @@
+
+
+
+
+body {
+  overflow: auto; /* İçeriğin taşması durumunda kaydırma çubuğu görünecek */
+  scroll-behavior: smooth;
+  }
+/* Tüm kaydırma çubuklarına genel stil */
+::-webkit-scrollbar {
+    width: 10px; /* Çubuk genişliği */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Çubuk rengi */
+    border-radius: 5px; /* Köşe yuvarlatma */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Çubuk arka plan rengi */
+    border-radius: 5px; /* Köşe yuvarlatma */
+  }
+  
+
+  
+  
+  
+  
+  
+  
+  
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities

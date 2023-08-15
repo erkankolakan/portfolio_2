@@ -1,10 +1,20 @@
 import React from 'react'
+import './globals.css'
+import Providers from './Providers'
+
 
 const layout = ({children}) => {
+
+
   return (
-    <div>
-      {children}
-    </div>
+    <html>
+        <body>
+          <title>Erkan KOLAKAN portfolio</title>
+          <Providers>
+            {children}
+          </Providers>
+        </body>
+    </html>
   )
 }
 
