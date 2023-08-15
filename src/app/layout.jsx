@@ -8,6 +8,7 @@ const layout = ({children}) => {
 
   return (
     <html>
+
         <body>
           <title>Erkan KOLAKAN portfolio</title>
           <Providers>

@@ -1,33 +1,7 @@
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
 
 
-
-
-body {
-  overflow: auto; /* İçeriğin taşması durumunda kaydırma çubuğu görünecek */
-  scroll-behavior: smooth;
-  }
-/* Tüm kaydırma çubuklarına genel stil */
-::-webkit-scrollbar {
-    width: 10px; /* Çubuk genişliği */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #888; /* Çubuk rengi */
-    border-radius: 5px; /* Köşe yuvarlatma */
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Çubuk arka plan rengi */
-    border-radius: 5px; /* Köşe yuvarlatma */
-  }
-
-
-
-
-
-
-  
-  .gradient-div:hover {
+.gradient-div:hover {
     background: linear-gradient(45deg, #f06, #00f, #0c6);
     background-size: 600% 600%;
     animation: gradientAnimation 15s ease infinite;
@@ -51,8 +25,6 @@ body {
     .respo{
       flex-wrap: wrap;
     }
-
-
   }
 
   @media (max-width: 500px) {
@@ -60,11 +32,11 @@ body {
       flex-wrap: wrap;
       box-sizing: border-box;
     }
-  
-  
-
-
   }
+
+  .slogan{
+    font-family: 'Akira Expanded', sans-serif;
+}
   
 
 

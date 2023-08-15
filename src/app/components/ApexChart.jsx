@@ -90,7 +90,7 @@ class ApexChart extends React.Component {
             options={options}
             series={seriesData}
             type="radialBar"
-            className=" respo flex block w-[13rem] sm:w-[20rem] "
+            className=" respo flex items-center justify-center block w-[13rem] sm:w-[20rem] mr-[-35px] ml-[-25px] "
           />
 </div>
     );

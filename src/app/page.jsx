@@ -56,15 +56,15 @@ const kopyala = () => {
 const page = () => {
   return (
     <>
-    <div className='h-[100vh]'>    
+    <div className='h-[100vh] pt-12'>    
       <div>
         <div className='absolute top-10 right-10'>
           <ThemeComp/>
         </div>
         <div className='flex justify-center items-center py-4   flex-col  gap-4 ' >
-          <Image className='rounded-full darkl:border-white border-gray-400 border-4 w-48  ' src={profilePhoto}/>
-          <div className='text-gray-600 dark:text-white  text-gray-700 text-3xl text-white'>Erkan KOLAKAN</div>
-          <hr className='w-[95%]'/>
+          <Image style={{}} className='rounded-full darkl:border-white border-gray-400 border-4 max-sm:w-[10rem] w-[15rem]   ' src={profilePhoto}/>
+          <div className='slogan  dark:text-white text-black  text-gray-700 max-sm:text-xl text-3xl text-white'>Erkan KOLAKAN</div>
+          <hr className='w-[95%] '/>
         </div>
 
         <motion.div className='flex flex-col gap-24'
@@ -75,7 +75,7 @@ const page = () => {
 
           <div className='flex justify-center items-center gap-4 respo-header '>
            <Link className='h-full' href="https://github.com/erkankolakan"  target="_blank" rel="noopener noreferrer"  > 
-           <motion.div  className='w-[10rem] h-[3.5rem] gradient-div dark:bg-white bg-gray-400 text-white dark:text-gray-800 rounded-xl '
+           <motion.div  className='w-[10rem] h-[3.5rem] max-sm:w-[10rem]  gradient-div dark:bg-white bg-gray-400 text-white dark:text-gray-800 rounded-xl '
             variants={item}
             whileHover={{
               scale:1.05,
