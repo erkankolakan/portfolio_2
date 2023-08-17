@@ -60,7 +60,7 @@ const page = () => {
 
           <div className='flex justify-center items-center gap-4 respo-header '>
            <Link className='h-full' href="https://github.com/erkankolakan"  target="_blank" rel="noopener noreferrer"  > 
-           <motion.div  className='w-[10rem] h-[3.5rem] max-sm:w-[10rem]  gradient-div dark:bg-white bg-gray-400 text-white dark:text-gray-800 rounded-xl '
+           <motion.div  className='px-8 h-[3.5rem] max-sm:w-[10rem]  gradient-div dark:bg-white bg-gray-400 text-white dark:text-gray-800 rounded-xl '
             variants={item}
             whileHover={{
               scale:1.05,
@@ -74,12 +74,12 @@ const page = () => {
             }}
             >
               <div className=' flex h-full justify-center items-center items-center gap-2 text-2xl font-bold cursor-pointer'>
-                <BsGithub size={"40px"}/> Git Hub
+                <BsGithub size={"40px"}/>
               </div>
             </motion.div>
             </Link>
             <Link href="https://www.linkedin.com/in/erkan-kolakan-03138b1a3/"  target="_blank" rel="noopener noreferrer">
-            <motion.div className='w-[10rem] h-[3.5rem] gradient-div  dark:bg-white bg-gray-400 text-white dark:text-gray-800 rounded-xl '
+            <motion.div className='px-8 h-[3.5rem] gradient-div  dark:bg-white bg-gray-400 text-white dark:text-gray-800 rounded-xl '
             variants={item}
             whileHover={{
               scale:1.05,
@@ -93,12 +93,12 @@ const page = () => {
             }}
             >
               <div className='flex h-full justify-center items-center items-center gap-2   text-2xl font-bold cursor-pointer'>
-                <BsLinkedin size={"35px"}/> Linkedin
+                <BsLinkedin size={"35px"}/>
               </div>
             </motion.div>
             </Link>
               <Link href="mailto:erkankolakan@gmail.com"  target="_blank" rel="noopener noreferrer">
-            <motion.div className='w-[10rem] h-[3.5rem] gradient-div  dark:bg-white bg-gray-400 text-white dark:text-gray-800 rounded-xl'
+            <motion.div className=' px-8 h-[3.5rem] gradient-div  dark:bg-white bg-gray-400 text-white dark:text-gray-800 rounded-xl'
             variants={item}
             whileHover={{
               scale:1.05,
@@ -112,7 +112,7 @@ const page = () => {
             }}
             >
               <div className='flex h-full justify-center items-center items-center  gap-2 text-2xl font-bold cursor-pointer'>
-                <AiOutlineMail size={"40px"}/> E-Mail
+                <AiOutlineMail size={"40px"}/>
               </div>
             </motion.div>
             </Link> 
