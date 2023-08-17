@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import profilePhoto from './image/erkan.jpg'
+import profilePhoto from './image/erkan2.jpg'
 import { BsGithub,BsLinkedin} from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai'
 import { motion } from "framer-motion";
@@ -136,7 +136,7 @@ const page = () => {
       <div className='flex mt-12 flex-col w-full  justify-center items-center '>
       <div className='flex flex-wrap max-w-[1200px] justify-center items-center gap-12  respo'>   
 
-      <div className=' relative flex justify-center items-center'>
+      <motion.div className=' relative flex justify-center items-center'>
           <div className='absolute ortalama '>
             <div className='slogan2 text-xl flex justify-center items-center' >HTML</div>
             <div className='slogan2 flex justify-center items-center'>100%</div>
@@ -145,7 +145,7 @@ const page = () => {
           progress={100}
           color="#3c71d0"
         />
-    </div>
+    </motion.div>
 
         <div className=' relative flex justify-center items-center'>
           <div className='absolute ortalama '>
