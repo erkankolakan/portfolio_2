@@ -74,6 +74,40 @@
   font-family: 'Caprasimo', cursive;
   font-family: 'Duru Sans', sans-serif;
 }
+
+
+
+
+
+
+
+.sloganrenk {
+  font-size: 3rem;
+  background-clip: text;
+  background-image: linear-gradient(45deg, #ff6b6b, #ffa06b, #ffd86b, #8aff6b, #6bffdb, #6b8aff, #d86bff, #ff6bff);
+     /* background-image: linear-gradient(45deg, #a300c2, #bd35d1, #526ee1, #2befea, #6bffdb, #00dbff, #1af274, #aff21a);  */
+
+  background-size: 200% auto;
+  color: transparent;
+  animation: gradientAnimation 5s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* border */
+
+
+
   
   
   
