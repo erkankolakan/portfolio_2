@@ -12,13 +12,13 @@ import 'react-toastify/dist/ReactToastify.css';
 import ThemeComp from './components/ThemeComp'
 import RadialChart from './components/RadialChart'
 
-// const chartData1 = [100]; 
-// const chartData2 = [90]; 
-// const chartData3 = [90]; 
-// const chartData4 = [75]; 
-// const chartData5 = [75]; 
-// const chartData6 = [50]; 
-// const chartData7 = [75]; 
+const chartData1 = [100]; 
+const chartData2 = [90]; 
+const chartData3 = [90]; 
+const chartData4 = [75]; 
+const chartData5 = [75]; 
+const chartData6 = [50]; 
+const chartData7 = [75]; 
 
 
 const container = {
@@ -150,32 +150,78 @@ const page = () => {
         pauseOnHover
         theme="light"
       />
-      <div className='flex mt-12 flex-col w-full justify-center items-center '>
-      <div className='flex'>   
+      <div className='flex mt-12 flex-col w-full  justify-center items-center '>
+      <div className='flex flex-wrap max-w-[1200px] justify-center items-center gap-12 '>   
+
+      <div className='relative flex justify-center items-center'>
+          <div className='absolute ortalama '>
+            <div className='slogan2 text-xl flex justify-center items-center' >HTML</div>
+            <div className='slogan2 flex justify-center items-center'>100%</div>
+          </div>
         <RadialChart
           progress={70}
           color="#3c71d0"
         />
+    </div>
+
+        <div className='relative flex justify-center items-center'>
+          <div className='absolute ortalama '>
+            <div className='slogan2 text-xl flex justify-center items-center' >CSS</div>
+            <div className='slogan2 flex justify-center items-center'>90%</div>
+          </div>
           <RadialChart
           progress={70}
           color="#3c71d0"
         />
+      </div>
+
+      <div className='relative flex justify-center items-center'>
+          <div className='absolute ortalama '>
+            <div className='slogan2 text-xl flex justify-center items-center' >Tailwindcss</div>
+            <div className='slogan2 flex justify-center items-center'>90%</div>
+          </div>
           <RadialChart
           progress={70}
           color="#3c71d0"
         />
+    </div>
+      <div className='relative flex justify-center items-center'>
+          <div className='absolute ortalama '>
+            <div className='slogan2 text-xl flex justify-center items-center' >JavaScript</div>
+            <div className='slogan2 flex justify-center items-center'>70%</div>
+          </div>
+          <RadialChart
+          progress={70}
+          color="#3c71d0"
+          writeText="selam bebek"
+        />
+    </div>
+
+      <div className='relative flex justify-center items-center'>
+          <div className='absolute ortalama '>
+            <div className='slogan2 text-xl flex justify-center items-center' >React</div>
+            <div className='slogan2 flex justify-center items-center'>70%</div>
+          </div>
           <RadialChart
           progress={70}
           color="#3c71d0"
         />
+
+      </div>
+
+
+      <div className='relative flex justify-center items-center'>
+          <div className='absolute ortalama '>
+            <div className='slogan2 text-xl flex justify-center items-center' >Next.js</div>
+            <div className='slogan2 flex justify-center items-center'>70%</div>
+          </div>
+        
           <RadialChart
           progress={70}
           color="#3c71d0"
         />
-          <RadialChart
-          progress={70}
-          color="#3c71d0"
-        />
+      </div>
+
       </div>
     </div>
 

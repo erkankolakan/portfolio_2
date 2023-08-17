@@ -29,14 +29,14 @@
 
   @media (max-width: 500px) {
     .respo-header{
-      flex-wrap: wrap;
-      box-sizing: border-box;
+      padding: 0;
     }
   }
 
   .slogan{
     font-family: 'Akira Expanded', sans-serif;
 }
+
 
 
 
@@ -66,9 +66,14 @@
   
 
 
-  
+.ortalama{
+  width: calc(100% - 80px);
+}
 
-  
+.slogan2{
+  font-family: 'Caprasimo', cursive;
+  font-family: 'Duru Sans', sans-serif;
+}
   
   
   

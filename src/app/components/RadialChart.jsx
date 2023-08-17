@@ -25,11 +25,15 @@ class RadialChart extends Component {
         const circumference = 2 * 3.14 * circleRadius;
         const strokeLength = setStrokeLength ? circumference / 100 * progress : 0;
 return (
-           <div
+    <div className=' flex  items-center justify-center '>
+        {/* <div className=''>asdasd</div> */}
+           <div 
                 className={classNames('radial-chart', className, {
                     'no-progress': strokeLength === 0
                 })}
+                
            >
+
                <svg viewBox="0 0 180 180" width={dimension} height={dimension}>
                    <circle
                        className="radial-chart-total"
@@ -53,8 +57,8 @@ return (
                    />
 
                </svg>
-      
-           </div>
+            </div>
+        </div>
         );
     }
 }
