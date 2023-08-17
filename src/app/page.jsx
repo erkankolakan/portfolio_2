@@ -8,16 +8,17 @@ import { motion } from "framer-motion";
 import Link from 'next/link'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import  ApexChart from './components/ApexChart'
+// import  ApexChart from './components/ApexChart'
 import ThemeComp from './components/ThemeComp'
+import RadialChart from './components/RadialChart'
 
-const chartData1 = [100]; 
-const chartData2 = [90]; 
-const chartData3 = [90]; 
-const chartData4 = [75]; 
-const chartData5 = [75]; 
-const chartData6 = [50]; 
-const chartData7 = [75]; 
+// const chartData1 = [100]; 
+// const chartData2 = [90]; 
+// const chartData3 = [90]; 
+// const chartData4 = [75]; 
+// const chartData5 = [75]; 
+// const chartData6 = [50]; 
+// const chartData7 = [75]; 
 
 
 const container = {
@@ -56,13 +57,13 @@ const kopyala = () => {
 const page = () => {
   return (
     <>
-    <div className='h-[100vh] pt-12'>    
+    <div className='h-[100vh]'>    
       <div>
         <div className='absolute top-10 right-10'>
           <ThemeComp/>
         </div>
         <div className='flex justify-center items-center py-4   flex-col  gap-4 ' >
-          <Image style={{}} className='rounded-full darkl:border-white border-gray-400 border-4 max-sm:w-[10rem] w-[15rem]   ' src={profilePhoto}/>
+          <Image src={profilePhoto} className='rounded-full darkl:border-white border-gray-400 border-4 max-sm:w-[10rem] w-[15rem]   ' />
           <div className='slogan  dark:text-white text-black  text-gray-700 max-sm:text-xl text-3xl text-white'>Erkan KOLAKAN</div>
           <hr className='w-[95%] '/>
         </div>
@@ -150,14 +151,31 @@ const page = () => {
         theme="light"
       />
       <div className='flex mt-12 flex-col w-full justify-center items-center '>
-      <div className='flex max-w-[90rem] justify-center items-center respo flex-wrap ' >
-        <ApexChart  title="HTML" seriesData={chartData1} />
-        <ApexChart title="CSS" seriesData={chartData2} />
-        <ApexChart title="tailwindcss" seriesData={chartData3} />
-        <ApexChart title="JavaScript" seriesData={chartData4} />
-        <ApexChart title="React" seriesData={chartData5} /> 
-        <ApexChart title="ThreeJS" seriesData={chartData6} />
-        <ApexChart title="Next.js" seriesData={chartData7} />
+      <div className='flex'>   
+        <RadialChart
+          progress={70}
+          color="#3c71d0"
+        />
+          <RadialChart
+          progress={70}
+          color="#3c71d0"
+        />
+          <RadialChart
+          progress={70}
+          color="#3c71d0"
+        />
+          <RadialChart
+          progress={70}
+          color="#3c71d0"
+        />
+          <RadialChart
+          progress={70}
+          color="#3c71d0"
+        />
+          <RadialChart
+          progress={70}
+          color="#3c71d0"
+        />
       </div>
     </div>
 
@@ -168,3 +186,9 @@ const page = () => {
 }
 
 export default page
+
+
+
+
+
+
