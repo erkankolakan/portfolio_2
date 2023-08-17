@@ -23,25 +23,21 @@
 
   @media (max-width: 1000px) {
     .respo{
-      flex-wrap: wrap;
+      gap: 10px !important;
+      margin-bottom: 40px;
     }
   }
 
   @media (max-width: 500px) {
     .respo-header{
-      padding: 0;
+      flex-wrap: wrap;
+      box-sizing: border-box;
     }
   }
 
   .slogan{
     font-family: 'Akira Expanded', sans-serif;
 }
-
-
-
-
-
-
 
 
 

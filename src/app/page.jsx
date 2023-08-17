@@ -2,23 +2,16 @@
 import React from 'react'
 import Image from 'next/image'
 import profilePhoto from './image/erkan.jpg'
-import { BsGithub, BsInstagram,BsLinkedin,BsTelephone } from 'react-icons/bs'
+import { BsGithub,BsLinkedin} from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai'
 import { motion } from "framer-motion";
 import Link from 'next/link'
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import  ApexChart from './components/ApexChart'
 import ThemeComp from './components/ThemeComp'
 import RadialChart from './components/RadialChart'
 
-const chartData1 = [100]; 
-const chartData2 = [90]; 
-const chartData3 = [90]; 
-const chartData4 = [75]; 
-const chartData5 = [75]; 
-const chartData6 = [50]; 
-const chartData7 = [75]; 
+
 
 
 const container = {
@@ -43,16 +36,6 @@ const item = {
 
 
 
-const kopyala = () => {
-  const numaram = "05415678985"
-  navigator.clipboard.writeText(numaram)
-  .then(() => {
-    toast('Telefon numarası kopyalandı!');
-  })
-
-}
-
-
 
 const page = () => {
   return (
@@ -62,9 +45,9 @@ const page = () => {
         <div className='absolute top-10 right-10'>
           <ThemeComp/>
         </div>
-        <div className='flex justify-center items-center py-4   flex-col  gap-4 ' >
-          <Image src={profilePhoto} className='rounded-full darkl:border-white border-gray-400 border-4 max-sm:w-[10rem] w-[15rem]   ' />
-          <div className='slogan  dark:text-white text-black  text-gray-700 max-sm:text-xl text-3xl text-white'>Erkan KOLAKAN</div>
+        <div className='flex justify-center items-center py-4   flex-col  gap-4' >
+          <Image alt='erkan_resim' src={profilePhoto} className='rounded-full darkl:border-white border-gray-400 border-4 max-sm:w-[10rem] w-[13rem]' />
+          <div className='slogan text-gray-800 text-black dark:text-white   max-sm:text-xl text-3xl'>Erkan KOLAKAN</div>
           <hr className='w-[95%] '/>
         </div>
 
@@ -151,41 +134,41 @@ const page = () => {
         theme="light"
       />
       <div className='flex mt-12 flex-col w-full  justify-center items-center '>
-      <div className='flex flex-wrap max-w-[1200px] justify-center items-center gap-12 '>   
+      <div className='flex flex-wrap max-w-[1200px] justify-center items-center gap-12  respo'>   
 
-      <div className='relative flex justify-center items-center'>
+      <div className=' relative flex justify-center items-center'>
           <div className='absolute ortalama '>
             <div className='slogan2 text-xl flex justify-center items-center' >HTML</div>
             <div className='slogan2 flex justify-center items-center'>100%</div>
           </div>
         <RadialChart
-          progress={70}
+          progress={100}
           color="#3c71d0"
         />
     </div>
 
-        <div className='relative flex justify-center items-center'>
+        <div className=' relative flex justify-center items-center'>
           <div className='absolute ortalama '>
             <div className='slogan2 text-xl flex justify-center items-center' >CSS</div>
             <div className='slogan2 flex justify-center items-center'>90%</div>
           </div>
           <RadialChart
-          progress={70}
+          progress={90}
           color="#3c71d0"
         />
       </div>
 
-      <div className='relative flex justify-center items-center'>
+      <div className=' relative flex justify-center items-center'>
           <div className='absolute ortalama '>
             <div className='slogan2 text-xl flex justify-center items-center' >Tailwindcss</div>
             <div className='slogan2 flex justify-center items-center'>90%</div>
           </div>
           <RadialChart
-          progress={70}
+          progress={90}
           color="#3c71d0"
         />
     </div>
-      <div className='relative flex justify-center items-center'>
+      <div className=' relative flex justify-center items-center '>
           <div className='absolute ortalama '>
             <div className='slogan2 text-xl flex justify-center items-center' >JavaScript</div>
             <div className='slogan2 flex justify-center items-center'>70%</div>
@@ -197,7 +180,7 @@ const page = () => {
         />
     </div>
 
-      <div className='relative flex justify-center items-center'>
+      <div className=' relative flex justify-center items-center'>
           <div className='absolute ortalama '>
             <div className='slogan2 text-xl flex justify-center items-center' >React</div>
             <div className='slogan2 flex justify-center items-center'>70%</div>
@@ -210,7 +193,7 @@ const page = () => {
       </div>
 
 
-      <div className='relative flex justify-center items-center'>
+      <div className=' relative flex justify-center items-center'>
           <div className='absolute ortalama '>
             <div className='slogan2 text-xl flex justify-center items-center' >Next.js</div>
             <div className='slogan2 flex justify-center items-center'>70%</div>
@@ -218,6 +201,19 @@ const page = () => {
         
           <RadialChart
           progress={70}
+          color="#3c71d0"
+        />
+      </div>
+
+
+      <div className=' relative flex justify-center items-center'>
+          <div className='absolute ortalama '>
+            <div className='slogan2 text-xl flex justify-center items-center' >Three.js</div>
+            <div className='slogan2 flex justify-center items-center'>50%</div>
+          </div>
+        
+          <RadialChart
+          progress={50}
           color="#3c71d0"
         />
       </div>
