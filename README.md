@@ -8,7 +8,7 @@ Sayfadan bir kaç görsel
 
 ![git_3](https://github.com/erkankolakan/portfolio_2/assets/126770706/e0372b03-03bd-4d57-9e72-37952d0ad4a9)
 
-Sayfa Responsive tasarım ve karanlık aydınlık modu var.
+Sayfa Responsive tasarım, karanlık aydınlık mod, animasyon var.
 
 ## Sayfayı gezmek isterseniz aşağıdaki linkden sayfaya ulaşabilirsiniz
 https://portfolio-2-erkankolakan.vercel.app/
