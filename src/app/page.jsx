@@ -47,7 +47,7 @@ const page = () => {
         </div>
         <div className='flex justify-center items-center py-4   flex-col  gap-4' >
           <Image alt='erkan_resim' src={profilePhoto} className='rounded-full darkl:border-white border-gray-400 border-4 max-sm:w-[10rem] w-[13rem]' />
-          <div className='slogan-renk    max-sm:text-xl text-3xl'>Erkan KOLAKAN</div>
+          <div className='slogan sloganrenk  max-sm:text-xl text-3xl'>Erkan KOLAKAN</div>
           {/* text-gray-800 dark:text-white üsteki erkan kolakan ait değerler rgb isteezsen bunları kullanabilirsin */}
           <hr className='w-[95%] '/>
         </div>
